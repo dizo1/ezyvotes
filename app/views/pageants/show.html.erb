@@ -1,0 +1,53 @@
+<div align="center">
+    
+      </div>
+    
+    <div>
+
+    <div class="row">
+				<div class="col-md-8" >
+				    
+				<div class="image">
+         <%= image_tag @pageant.image.url, class: "img-responsive center-block" if @pageant.image? %>
+        </div>
+  </br></br>
+  <div align="center">
+    <ul class="list-inline" id="links">
+      
+      <li><a href="#">Add Contestants</a></li>
+      <li><a href="#"><a href="#">Edit Vote</a></li>
+      <li><a href="#">Delete</a></li>
+      <li><a href="#">Something...</a></li>
+    </ul>
+  </div>
+  <!--Panel starts from here-->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 align="center" class="panel-title"><b>Vote Created</b></h4>
+  </div>
+  <div class="panel-body">
+          <h4 align="center"><%= @pageant.name %></h4>
+          <h4 align="center"><%= @pageant.description  %></h4>
+          <h4 align="center"><%= @pageant.category  %></h4>
+          <h4 align="center"><b>Starting:</b> <%= @pageant.startdate.to_s %></h4>
+          <h4 align="center"><b>Ending:</b> <%= @pageant.enddate.to_s %></h4>
+          <h4 align="center"><b>Time Zone:</b> <%= @pageant.timezone  %></h4>
+		</div>
+  </div>
+</div>
+  <!--Ending the panel view here-->
+
+        <div class="panel-heading center">Current Pageants</div>
+        <div class="col-md-4">
+          <!--Current created pageants appear here-->
+        </div>
+        </div>
+      </div>
+       
+					
+      
+ |
+<%= link_to 'Back', pageants_path %>
+<% render "layouts/footer"%>
+</body>
+</html>

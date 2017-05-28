@@ -1,0 +1,79 @@
+<%= render 'shared/errors', obj: @pageant  %>
+
+<div class="login_create">
+<div class="row">
+    <div class="col-md-12">
+        <%= form_for(@pageant, :html => { class: "form-horizontal", multipart: true, role: "form" }) do |f| %>
+    <div class="form-group">
+        <div class="control-label col-md-2">
+            <%= f.label :name %>
+            </div>
+            <div class="col-md-8">
+                <%= f.text_field :name, class: "form-control", placeholder: "Name of Pageant", autofocus: true %>
+            </div>
+            </div>
+        <div class="form-group">
+        <div class="control-label col-md-2">
+            <%= f.label :description %>
+            </div>
+            <div class="col-md-8">
+                <%= f.text_area :description, rows:3, class: "form-control", placeholder: "Description of Pageant" %>
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    <%= f.label :category %>
+                </div>
+                <div class="col-md-8">
+                    <%= f.text_field :category, class: "form-control", placeholder: "Give a category of your choice" %>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    <%= f.label :StartDate, "Start Date" %>
+                </div>
+                <div class="col-md-8">
+                    <%= f.date_field :startdate, class: "form-control", placeholder: "Enter the start date" %>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    <%= f.label :Enddate, "End Date" %>
+                </div>
+                <div class="col-md-8">
+                    <%= f.date_field :enddate, class: "form-control", placeholder: "Enter the end date" %>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    <%= f.label :timezone %>
+                </div>
+                <div class="col-md-8">
+                    <%= f.time_zone_select :timezone, nil, {}, class: 'form-control' %>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="control-label col-md-2">
+                    <%= f.label :image, "Add Banner" %>
+                </div>
+                <div class="col-md-8">
+                    <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png', class: "btn btn-primary btn-sm" %>
+                </div>
+            </div>
+              <%= f.hidden_field :user_id, value: current_user.id %>
+            <div form-group>
+                <div class="col-md-offset-2 col-md-10">
+                      <%=  f.submit class: "btn btn-primary btn-lg btn-xlarge" %>
+                </div>  
+            </div>
+                        <% end %>
+            <div class="col-md-4 col-md-offset-4 colormatch">
+                    [<%= link_to "Return to pageants listing", pageants_path %>]
+            </div>
+</div>
+</div>
+</div>

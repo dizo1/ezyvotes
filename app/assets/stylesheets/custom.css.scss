@@ -1,0 +1,169 @@
+$navbar-default-bg: #186CA2;
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+html, body{
+  height: 100%;
+  font-family: Century Gothic, sans-serif;
+  background: #dfe3ee;
+}
+#logo {
+    float:left;
+    font-size: 1.7em;
+    color:#fff;
+    text-transform:none;
+    letter-spacing: -1px;
+    font-weight:bold;
+    font-family: Century Gothic, sans-serif;
+}
+.navbar-default{
+    margin-bottom: 15px;
+}
+
+.container1{
+    margin-top:10p;
+    position:fixed;
+}
+
+.center{
+    text-align: center;
+}
+.jumbotron h1{
+    color:white;
+    text-align:center;
+    margin-bottom:30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+.jumbotron h2{
+    color:#fff;
+    text-align:center;
+    margin-bottom:30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+  
+}
+.jumbotron{
+    background-image: asset-url('pageant.jpg');
+    background-size:cover;
+    height:480px;
+    
+
+}
+.btn-xlarge{
+    background-color:#186CA2;
+    
+}
+div.content
+{
+width: 305px;
+}
+
+.triad{
+    font-size:18px;
+}
+
+
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
+
+.thumbnail.right-caption {
+    float: left;
+}
+
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+a.links{
+    color:#fff !important;
+    text-decoration:none;
+}
+.panel-body{
+    font-size: 15px;
+    font-family: Century Gothic, sans-serif;
+}
+.panel-body p{
+    font-size: 145x;
+    font-family: Century Gothic, sans-serif;
+}
+.panel{
+    height: 344px;
+    width: 844px;
+}
+.nav{
+    font-size: 15px;
+    font-family: Century Gothic, sans-serif;
+}
+#footer {
+  left: 0px;
+  top: 40px;
+  color: white;
+  width:auto;
+  margin-right: 0px;
+  background-color: #186CA2;
+  height:50px;
+  bottom: 0px;
+  position:relative;
+}
+.container{
+    margin-top: 5px;
+    min-height:100%;
+    height: auto;
+}
+.image{
+    margin-top:75px;
+}
+.login{
+    text-align: center;
+    max-width: 400px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 10px;
+  margin-top:50px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.login_edit{
+  text-align: center;
+  max-width: 500px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 10px;
+  margin-top:50px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.login_create{
+    text-align: center;
+  max-width: 600px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 10px;
+  margin-top:25px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+a:link {
+    text-decoration: none;
+}
