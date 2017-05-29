@@ -1,0 +1,50 @@
+<%= render 'shared/errors', obj: @contestant  %>
+<div class="login_edit">
+<div class="row">
+    <div class="col-md-12">
+        <%= form_for([@contestant], :html => { class: "form-horizontal", multipart: true, role: "form" }) do |f| %>
+    <div class="form-group">
+        <div class="control-label col-md-2">
+            <%= f.label :Number %>
+            </div>
+            <div class="col-md-8">
+                <%= f.text_field :con_num, class: "form-control", placeholder: "Contestant's Number", autofocus: true %>
+            </div>
+            </div>
+        <div class="form-group">
+        <div class="control-label col-md-2">
+            <%= f.label :Name %>
+            </div>
+            <div class="col-md-8">
+                <%= f.text_field :name, class: "form-control", placeholder: "Contestant's Name" %>
+            </div>
+            </div>
+            <div class="form-group">
+        <div class="control-label col-md-2">
+            <%= f.label :Profile %>
+            </div>
+            <div class="col-md-8">
+                <%= f.text_area :profile, rows:5, class: "form-control", placeholder: "Contestant's Profile" %>
+            </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="control-label col-md-2">
+                <%= f.label :image, "Image" %>
+              </div>
+              <div class="col-md-8">
+                <%= f.file_field :image, accept: 'image/jpeg,image/gif,image/png', class: "btn btn-primary btn-sm" %>
+              </div>
+                </div>
+            
+        <div form-group>
+          <div class="col-md-offset-2 col-md-10">
+              <%=  f.submit class: "btn btn-primary btn-md" %>
+          </div>  
+        </div>
+        <% end %>
+        <div class="col-md-4 col-md-offset-4 colormatch">
+            [<%= link_to "Pageants listing", pageants_path %>]
+        </div>
+</div>
+</div></div>

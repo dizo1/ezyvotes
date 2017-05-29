@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
          
          has_many :pageants  
-         
+         has_many :contestants, through: :pageants
 end

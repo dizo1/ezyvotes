@@ -21,7 +21,9 @@ Rails.application.routes.draw do
     root "home#index"
     get '/about', to: 'pages#about'
     get '/contact', to: 'pages#contact'
-    resources :pageants
+    resources :pageants do
+      resources :contestants
+    end
     resources :contestants
     resources :users
 

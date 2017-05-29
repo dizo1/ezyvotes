@@ -9,13 +9,14 @@ class PageantsController < ApplicationController
 
   # GET /pageants/new
   def new
-    @pageant = current_user.pageant.build #@pageant = Pageant.new
+   # @pageant = current_user.pageant.build 
+   @pageant = Pageant.new
   end
   
   def create
     #@pageant = Pageant.new(pageant_params)
       @pageant = current_user.pageants.new(pageant_params)
-      #@pageant.user_id = current_user
+      #git @pageant.user_id = current_user
       if @pageant.save
         flash[:success] = "Pageant was created successfully"
         redirect_to pageant_path(@pageant)
